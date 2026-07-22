@@ -23,6 +23,16 @@ public class LargeElement {
     }
 
 
+    // USING THE RECURSION APPROACH
+           static int findLargest(int[] arr, int index) {
+            if (index == arr.length - 1) {
+                return arr[index];
+            }
+            int largest = findLargest(arr, index + 1);
+
+            return Math.max(arr[index], largest);
+        }
+
 
 
 
@@ -33,9 +43,15 @@ public class LargeElement {
         System.out.println("using the sort approach:");
         int maxBru=obj.findMaxElementUseSort(arr);
         System.out.println("The max element in array is :" +maxBru);
+
         System.out.println("\n using the max variable approach:");
         int maxopt=obj.findMaxElementUseMaxVariable(arr);
         System.out.println("The max element in array is :" +maxopt);
+
+        System.out.println("\nusing the recursion approach:");
+        int[] arr2 = {10, 45, 32, 99, 21, 56};
+        int result = findLargest(arr, 0);
+        System.out.println("Largest Element = " + result);
 
     }
 }
