@@ -9,14 +9,14 @@ package dsa;
 //- **Signature:** `void moveZeroes(int[] nums)`
 //- **Hint:** Keep an "insert position" pointer. Walk the array; each time you see a non-zero, write it at the insert position and advance it. Fill the rest with zeros.
 
-public class MovezeroToend {
+public class MoveZeroToEnd {
     public static void main(String[] args){
        // int[] arr=new int[]{0,10,30,0,22,99,0};
         //MovezeroToend obj=new MovezeroToend();
         //obj.movetoend(arr);
 
         int[] arr=new int[]{0,10,30,0,22,99,0};
-        MovezeroToend obj=new MovezeroToend();
+        MoveZeroToEnd obj=new MoveZeroToEnd();
         obj.movetoend(new int[]{0,10,30,0,22,99,0});
     }
      void movetoend(int[] arr){
