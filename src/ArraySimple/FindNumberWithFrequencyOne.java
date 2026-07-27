@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class FindNumberWithFrequencyOne {
 
-    // USING THE APPROACH OF THE ARRAYs two pointer
+    // USING THE APPROACH OF THE ARRAYs
 
     int findNumberWithFrequencyOneUseArrays(int[] arr){
 
